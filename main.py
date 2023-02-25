@@ -1,9 +1,11 @@
+from decouple import config
+
 import datetime as dt
 import requests
 
 
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
-API_KEY = "8e5e4bbcd050cb6824f7d32cf3e54bcf"
+API_KEY= config('API_KEY')
 CITY = "Toronto"
 
 
